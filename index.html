@@ -1,201 +1,234 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia Auto & Moto Exclusiva</title>
+    <title>VELOCE | Agencia de Autos y Motos Exclusivas</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome Iconos -->
+    <!-- FontAwesome para Íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
 
-    <!-- Botón Flotante Modo Claro/Oscuro -->
-    <button id="theme-toggle" class="theme-toggle-btn" title="Cambiar Tema">
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">VELOCE<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#autos">Autos</a></li>
+            <li><a href="#motos">Motos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Wrapper para la escena 3D / Parallax -->
+    <div id="scene-container" class="scene-container">
+        
+        <!-- SECCIÓN 1: PORTADA SPLIT 50/50 -->
+        <section id="inicio" class="hero-split">
+            <div class="split-side left-side">
+                <div class="overlay"></div>
+                <div class="split-content">
+                    <span class="tag">Colección Exclusiva</span>
+                    <h1>AUTOS DE LUJO</h1>
+                    <p>Potencia, elegancia y distinción sin límites.</p>
+                    <a href="#autos" class="btn btn-primary">Explorar Autos</a>
+                </div>
+            </div>
+            <div class="split-side right-side">
+                <div class="overlay"></div>
+                <div class="split-content">
+                    <span class="tag">Libertad Pura</span>
+                    <h1>MOTOS DE ALTA CILINDRADA</h1>
+                    <p>La máxima experiencia sobre dos ruedas.</p>
+                    <a href="#motos" class="btn btn-secondary">Explorar Motos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTENIDO SUPERPUESTO (Sube en capa como tarjeta sobre el inicio) -->
+        <main class="content-overlay">
+
+            <!-- SECCIÓN 2: NOSOTROS -->
+            <section id="nosotros" class="section-padding">
+                <div class="container">
+                    <div class="section-header center">
+                        <span class="subtitle">Nuestra Filosofía</span>
+                        <h2>LÍDERES EN MOTORING DE LUJO</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p class="lead">En VELOCE seleccionamos quirúrgicamente cada vehículo para garantizar que solo las máquinas más extraordinarias formen parte de nuestro catálogo.</p>
+                            <p>No vendemos solo medios de transporte; entregamos obras maestras de ingeniería, piezas de colección y experiencias inolvidables para conductores que exigen la excelencia absoluta.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <i class="fa-solid fa-award"></i>
+                                <h3>+<span class="counter" data-target="12">0</span></h3>
+                                <p>Años de Experiencia</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fa-solid fa-car-side"></i>
+                                <h3>+<span class="counter" data-target="1500">0</span></h3>
+                                <p>Vehículos Entregados</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <h3><span class="counter" data-target="100">0</span>%</h3>
+                                <p>Garantía de Satisfacción</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: CATÁLOGO DE AUTOS -->
+            <section id="autos" class="section-padding bg-alt">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="subtitle">Superdeportivos & Sedanes</span>
+                        <h2>CATÁLOGO DE AUTOS</h2>
+                        <div class="divider"></div>
+                    </div>
+
+                    <!-- Video Header Autos -->
+                    <div class="video-banner">
+                        <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80">
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-sports-car-driving-on-a-road-at-sunset-41011-large.mp4" type="video/mp4">
+                            Tu navegador no soporta videos en HTML5.
+                        </video>
+                        <div class="video-overlay">
+                            <h3>Dominio y Performance</h3>
+                        </div>
+                    </div>
+
+                    <!-- Grid 7 Autos -->
+                    <div class="catalog-grid" id="autos-grid">
+                        <!-- Generado por JS o maquetado de 7 elementos -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 4: CATÁLOGO DE MOTOS -->
+            <section id="motos" class="section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="subtitle">Superbikes & Custom</span>
+                        <h2>CATÁLOGO DE MOTOS</h2>
+                        <div class="divider"></div>
+                    </div>
+
+                    <!-- Video Header Motos -->
+                    <div class="video-banner">
+                        <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80">
+                            <source src="https://assets.mixkit.co/videos/preview/mixkit-motorcyclist-riding-fast-on-a-highway-41553-large.mp4" type="video/mp4">
+                            Tu navegador no soporta videos en HTML5.
+                        </video>
+                        <div class="video-overlay">
+                            <h3>Adrenalina sobre Dos Ruedas</h3>
+                        </div>
+                    </div>
+
+                    <!-- Grid 7 Motos -->
+                    <div class="catalog-grid" id="motos-grid">
+                        <!-- Generado por JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: CONTACTO Y MAPA BLOQUEABLE -->
+            <section id="contacto" class="section-padding bg-alt">
+                <div class="container">
+                    <div class="section-header center">
+                        <span class="subtitle">Atención Exclusiva</span>
+                        <h2>CONTÁCTANOS</h2>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="contact-wrapper">
+                        <!-- Info de Contacto -->
+                        <div class="contact-info">
+                            <h3>Showroom Central</h3>
+                            <p class="address"><i class="fa-solid fa-location-dot"></i> Av. Las Magnolias 4500, Distrito de Lujo</p>
+                            <p><i class="fa-solid fa-phone"></i> +52 (55) 8765-4321</p>
+                            <p><i class="fa-solid fa-envelope"></i> contacto@veloce-auto.com</p>
+                            
+                            <h4 class="hours-title">Horarios de Atención</h4>
+                            <ul class="hours-list">
+                                <li><span>Lunes a Viernes:</span> 09:00 AM - 08:00 PM</li>
+                                <li><span>Sábados:</span> 10:00 AM - 04:00 PM</li>
+                                <li><span>Domingos:</span> Cita previa exclusivamente</li>
+                            </ul>
+
+                            <div class="social-links">
+                                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://wa.me/525587654321" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Mapa Interactivo con Bloqueo de Seguridad -->
+                        <div class="map-container">
+                            <div class="map-wrapper">
+                                <div id="map-overlay" class="map-overlay">
+                                    <div class="map-lock-card">
+                                        <i class="fa-solid fa-lock" id="map-lock-icon"></i>
+                                        <p id="map-status-text">El mapa está bloqueado para permitir el scroll continuo.</p>
+                                        <button id="btn-toggle-map" class="btn btn-sm">
+                                            <i class="fa-solid fa-lock-open"></i> Desbloquear Mapa
+                                        </button>
+                                    </div>
+                                </div>
+                                <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661642875138!2d-99.1686936850934!3d19.427020586887532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd15a7%3A0x1d46f6f9660c6f2a!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1680000000000!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="container">
+                    <p>&copy; 2026 VELOCE Agencia Automotriz. Todos los derechos reservados. Inspirado en el estilo Carz.</p>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- BOTÓN FLOTANTE TEMA CLARO/OSCURO -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar Tema">
         <i class="fa-solid fa-moon"></i>
     </button>
 
-    <!-- Navegación -->
-    <header class="header">
-        <div class="logo">
-            <h2>AUTO<span>&</span>MOTO</h2>
-        </div>
-        <nav class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#autos">Autos</a>
-            <a href="#motos">Motos</a>
-            <a href="#contacto" class="btn-contacto">Contacto</a>
-        </nav>
-    </header>
-
-    <!-- 1. SECCIÓN INICIO (Efecto Cinemático Parallax 3D) -->
-    <section id="inicio" class="hero-split">
-        <!-- Lado Autos -->
-        <div class="split-card auto-side">
-            <div class="overlay"></div>
-            <div class="split-content">
-                <span class="badge">Lujo & Potencia</span>
-                <h1>AUTOS EXCLUSIVOS</h1>
-                <p>Modelos seleccionados con los más altos estándares.</p>
-                <a href="#autos" class="btn-hero">Explorar Autos</a>
-            </div>
-        </div>
-
-        <!-- Lado Motos -->
-        <div class="split-card moto-side">
-            <div class="overlay"></div>
-            <div class="split-content">
-                <span class="badge">Adrenalina Pura</span>
-                <h1>MOTOS DE ALTA GAMA</h1>
-                <p>Libertad, velocidad y rendimiento único.</p>
-                <a href="#motos" class="btn-hero btn-secondary">Explorar Motos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTENIDO SOBREPUESTO QUE SUBE AL HACER SCROLL -->
-    <div class="content-overlay">
-        
-        <!-- 2. NOSOTROS (Entrada Elegante y Corta) -->
-        <section id="nosotros" class="section-nosotros">
-            <div class="container grid-nosotros">
-                <div class="nosotros-text">
-                    <span class="sub-badge">Excelencia Automotriz</span>
-                    <h2>Elegancia y Desempeño en Cada Rodado</h2>
-                    <p class="lead">Nos especializamos en la comercialización de vehículos y motocicletas de alta gama, ofreciendo una experiencia de compra personalizada, transparente y garantizada.</p>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>+12</h3>
-                            <p>Años de Experiencia</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>+1.500</h3>
-                            <p>Vehículos Entregados</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Garantía de Satisfacción</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="nosotros-banner">
-                    <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80" alt="Showroom Elegante">
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. CATÁLOGO AUTOS (Con Video y 5 Vehículos) -->
-        <section id="autos" class="showcase-section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Catálogo de <span>Autos</span></h2>
-                    <p>Vehículos de alto rendimiento y lujo comprobado.</p>
-                </div>
-
-                <div class="video-container">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-sports-car-driving-on-a-road-at-sunset-41018-large.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-overlay">
-                        <h3>Experiencia en Carretera</h3>
-                    </div>
-                </div>
-
-                <div class="grid-vehicles" id="grid-autos">
-                    <!-- Generado por JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. CATÁLOGO MOTOS (Con Video y 5 Vehículos) -->
-        <section id="motos" class="showcase-section bg-alt">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Catálogo de <span>Motos</span></h2>
-                    <p>Domina el asfalto con la mejor ingeniería sobre dos ruedas.</p>
-                </div>
-
-                <div class="video-container">
-                    <video autoplay loop muted playsinline>
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-motorcyclist-riding-fast-on-a-road-41549-large.mp4" type="video/mp4">
-                    </video>
-                    <div class="video-overlay">
-                        <h3>Libertad sin Límite</h3>
-                    </div>
-                </div>
-
-                <div class="grid-vehicles" id="grid-motos">
-                    <!-- Generado por JavaScript -->
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. CONTACTO, HORARIOS, REDES Y MAPA BLOQUEABLE -->
-        <section id="contacto" class="section-contacto">
-            <div class="container grid-contacto">
-                
-                <div class="info-contacto">
-                    <h2>Visítanos o <span>Contáctanos</span></h2>
-                    <p>Estamos listos para asesorarte en la compra de tu próximo vehículo.</p>
-                    
-                    <div class="details-list">
-                        <p><i class="fa-solid fa-location-dot"></i> <strong>Dirección:</strong> Av. Principal 1234, Zona Central</p>
-                        <p><i class="fa-solid fa-clock"></i> <strong>Horarios:</strong> Lun - Vie: 9:00 AM - 7:00 PM | Sáb: 9:00 AM - 2:00 PM</p>
-                        <p><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> +123 456 7890</p>
-                    </div>
-
-                    <h3>Síguenos en Redes Sociales</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <!-- Contenedor del Mapa con Botón de Bloqueo -->
-                <div class="mapa-wrapper">
-                    <div class="map-controls">
-                        <button id="toggle-map-btn" class="btn-lock">
-                            <i class="fa-solid fa-lock"></i> <span id="map-btn-text">Mapa Bloqueado (Haz Clic para Interactuar)</span>
-                        </button>
-                    </div>
-                    <div class="map-container locked" id="map-container">
-                        <div class="map-overlay-guard" id="map-guard"></div>
-                        <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.481283921389!2d-64.7330!3d-21.5330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDMxJzebOCJTIDY0wrA0Myc1OC44Ilc!5e0!3m2!1ses!2s!4v1620000000000!5m2!1ses!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2026 Agencia Auto & Moto. Todos los derechos reservados.</p>
-        </footer>
-
-    </div>
-
-    <!-- VENTANA MODAL DE DETALLES DEL VEHÍCULO -->
-    <div id="vehicle-modal" class="modal">
+    <!-- MODAL POP-UP PARA FICHA TÉCNICA -->
+    <div id="modal-details" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <div class="modal-grid">
-                <div class="modal-img">
-                    <img id="modal-image" src="" alt="Vehículo">
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Vehículo">
                 </div>
-                <div class="modal-details">
-                    <span id="modal-badge" class="badge"></span>
-                    <h2 id="modal-title"></h2>
-                    <p id="modal-price" class="price"></p>
-                    <p id="modal-desc" class="description"></p>
+                <div class="modal-info">
+                    <span id="modal-category" class="tag">Categoría</span>
+                    <h2 id="modal-title">Nombre del Vehículo</h2>
+                    <p id="modal-price" class="price">$0 USD</p>
+                    <p id="modal-description">Descripción detallada...</p>
                     
-                    <div class="specs-grid" id="modal-specs">
-                        <!-- Especificaciones detalladas -->
+                    <div class="specs-grid">
+                        <div class="spec-item"><i class="fa-solid fa-gauge-high"></i> <span>Km:</span> <strong id="modal-km">-</strong></div>
+                        <div class="spec-item"><i class="fa-solid fa-gas-pump"></i> <span>Combustible:</span> <strong id="modal-fuel">-</strong></div>
+                        <div class="spec-item"><i class="fa-solid fa-gear"></i> <span>Transmisión:</span> <strong id="modal-trans">-</strong></div>
+                        <div class="spec-item"><i class="fa-solid fa-bolt"></i> <span>Motor / Potencia:</span> <strong id="modal-power">-</strong></div>
+                        <div class="spec-item"><i class="fa-solid fa-shield-cat"></i> <span>Garantía:</span> <strong id="modal-warranty">-</strong></div>
                     </div>
 
-                    <a id="modal-whatsapp" href="#" target="_blank" class="btn-modal-wa">
+                    <a id="modal-whatsapp" href="#" target="_blank" class="btn btn-whatsapp">
                         <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
                     </a>
                 </div>

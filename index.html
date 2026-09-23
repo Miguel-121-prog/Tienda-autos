@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Autos y Motos | Tu Marca</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos FontAwesome para estilo moderno -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="header">
+        <div class="logo">
+            <h2>AUTO<span>&</span>MOTO</h2>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#autos">Autos</a>
+            <a href="#motos">Motos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto" class="btn-contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section Dividida (50% Autos / 50% Motos) -->
+    <section id="inicio" class="hero-split">
+        <!-- Lado Autos -->
+        <div class="split-card auto-side">
+            <div class="overlay"></div>
+            <div class="split-content">
+                <span class="badge">Catálogo Exclusivo</span>
+                <h1>AUTOS DE LUJO Y DEPORTIVOS</h1>
+                <p>Encuentra el auto de tus sueños con financiamiento a tu medida.</p>
+                <a href="#autos" class="btn-hero">Ver Autos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Lado Motos -->
+        <div class="split-card moto-side">
+            <div class="overlay"></div>
+            <div class="split-content">
+                <span class="badge">Pura Adrenalina</span>
+                <h1>MOTOS DE ALTA CILINDRADA</h1>
+                <p>Potencia, velocidad y libertad sobre dos ruedas.</p>
+                <a href="#motos" class="btn-hero btn-secondary">Ver Motos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartado Exclusivo: AUTOS (Con Video) -->
+    <section id="autos" class="showcase-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sección de <span>Autos</span></h2>
+                <p>Explora nuestros modelos destacados e innovación en cuatro ruedas.</p>
+            </div>
+
+            <!-- Contenedor del Video de Autos -->
+            <div class="video-container">
+                <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-sports-car-driving-on-a-road-at-sunset-41018-large.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+                <div class="video-overlay">
+                    <h3>Experiencia al Volante</h3>
+                    <p>Tecnología, seguridad y el mejor rendimiento del mercado.</p>
+                </div>
+            </div>
+
+            <!-- Grilla de Modelos de Autos -->
+            <div class="grid-vehicles">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=600" alt="Auto Deportivo">
+                    <div class="card-info">
+                        <h3>Sedán Deportivo Turbo</h3>
+                        <p class="price">$35,000 USD</p>
+                        <ul>
+                            <li><i class="fa-solid fa-gas-pump"></i> Gasolina Híbrido</li>
+                            <li><i class="fa-solid fa-gauge-high"></i> 0-100 km/h: 4.2s</li>
+                        </ul>
+                        <button class="btn-card">Consultar por WhatsApp</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=600" alt="SUV 4x4">
+                    <div class="card-info">
+                        <h3>SUV Premium 4x4</h3>
+                        <p class="price">$48,500 USD</p>
+                        <ul>
+                            <li><i class="fa-solid fa-gas-pump"></i> Diésel / Automático</li>
+                            <li><i class="fa-solid fa-users"></i> 7 Pasajeros</li>
+                        </ul>
+                        <button class="btn-card">Consultar por WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartado Exclusivo: MOTOS (Con Video) -->
+    <section id="motos" class="showcase-section bg-darker">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sección de <span>Motos</span></h2>
+                <p>Siente la potencia y la libertad en cada curva.</p>
+            </div>
+
+            <!-- Contenedor del Video de Motos -->
+            <div class="video-container">
+                <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-motorcyclist-riding-fast-on-a-road-41549-large.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+                <div class="video-overlay">
+                    <h3>Dominio en la Carretera</h3>
+                    <p>Modelos Sport, Naked, Custom y Touring disponibles.</p>
+                </div>
+            </div>
+
+            <!-- Grilla de Modelos de Motos -->
+            <div class="grid-vehicles">
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=600" alt="Moto Sport">
+                    <div class="card-info">
+                        <h3>SuperSport 600cc</h3>
+                        <p class="price">$12,800 USD</p>
+                        <ul>
+                            <li><i class="fa-solid fa-bolt"></i> 600 cc - 120 HP</li>
+                            <li><i class="fa-solid fa-shield"></i> Frenos ABS de doble disco</li>
+                        </ul>
+                        <button class="btn-card">Consultar por WhatsApp</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=600" alt="Moto Adventure">
+                    <div class="card-info">
+                        <h3>Adventure Touring 1000cc</h3>
+                        <p class="price">$18,500 USD</p>
+                        <ul>
+                            <li><i class="fa-solid fa-compass"></i> Suspensión Electrónica</li>
+                            <li><i class="fa-solid fa-suitcase"></i> Maleteros incluidos</li>
+                        </ul>
+                        <button class="btn-card">Consultar por WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="footer">
+        <p>&copy; 2026 Agencia Auto & Moto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
